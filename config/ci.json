@@ -6,9 +6,6 @@
     "build": [
     ],
     "tests": [
-      "docker run -d --address 0.0.0.0:8191 quay.io/wakaba/minio /data",
-      "sleep 10",
-      "curl -f --dump-header - http://0.0.0.0:8191",
       "make test-ci",
       
       "true"

@@ -26,21 +26,6 @@
             },
             {
                "run" : {
-                  "command" : "docker run -d --address 0.0.0.0:8191 quay.io/wakaba/minio /data"
-               }
-            },
-            {
-               "run" : {
-                  "command" : "sleep 10"
-               }
-            },
-            {
-               "run" : {
-                  "command" : "curl -f --dump-header - http://0.0.0.0:8191"
-               }
-            },
-            {
-               "run" : {
                   "command" : "make test-ci"
                }
             },
@@ -135,7 +120,7 @@
          "triggers" : [
             {
                "schedule" : {
-                  "cron" : "41 6 * * *",
+                  "cron" : "17 4 * * *",
                   "filters" : {
                      "branches" : {
                         "only" : [
@@ -196,7 +181,7 @@
          "triggers" : [
             {
                "schedule" : {
-                  "cron" : "41 18 * * *",
+                  "cron" : "17 16 * * *",
                   "filters" : {
                      "branches" : {
                         "only" : [
