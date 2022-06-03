@@ -41,6 +41,11 @@
             },
             {
                "run" : {
+                  "command" : "make test-ci"
+               }
+            },
+            {
+               "run" : {
                   "command" : "true"
                }
             },
@@ -130,7 +135,7 @@
          "triggers" : [
             {
                "schedule" : {
-                  "cron" : "19 6 * * *",
+                  "cron" : "41 6 * * *",
                   "filters" : {
                      "branches" : {
                         "only" : [
@@ -191,7 +196,7 @@
          "triggers" : [
             {
                "schedule" : {
-                  "cron" : "19 18 * * *",
+                  "cron" : "41 18 * * *",
                   "filters" : {
                      "branches" : {
                         "only" : [
